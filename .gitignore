@@ -1,0 +1,25 @@
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+*.egg-info/
+.DS_Store
+.cursor/
+.idea/
+.vscode/
+
+# Large binaries — GitHub git file limit is 100MB. Use Releases.
+dist/
+*.whl
+*.so
+*.tar.gz
+
+# Local / ComfyUI leftovers
+nunchaku-src/
+build/
+*.log
+.pytest_cache/
+tests/
+test_*.py
+BUILD.md
