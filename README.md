@@ -22,16 +22,22 @@ ImportError: .../nunchaku/_C.cpython-312-x86_64-linux-gnu.so: undefined symbol: 
 
 This project redistributes nunchaku `1.3.0dev` compiled against Torch 2.14 + CUDA 13 + `sm_120a`.
 
-The `.whl` is ~118 MB (uncompressed `_C.so` ~212 MB). It is **not** stored in git. Download it from **[Releases](https://github.com/Odelialan/nunchaku-prebuilt-torch2.14-cu130-git-init/releases)**.
+The `.whl` is ~118 MB (uncompressed `_C.so` ~212 MB). It is **not** stored in git. Download it from **[Releases v1.0.0](https://github.com/Odelialan/nunchaku-prebuilt-torch2.14-cu130-git-init/releases/tag/v1.0.0)**.
+
+GitHub Release assets cannot contain `+` in the filename, so the published file is:
+
+`nunchaku-1.3.0.dev20260909.cu13.0torch2.14-cp312-cp312-linux_x86_64.whl`
+
+Direct download: https://github.com/Odelialan/nunchaku-prebuilt-torch2.14-cu130-git-init/releases/download/v1.0.0/nunchaku-1.3.0.dev20260909.cu13.0torch2.14-cp312-cp312-linux_x86_64.whl
 
 ## Install (ComfyUI venv)
 
-Download `nunchaku-1.3.0.dev20260909+cu13.0torch2.14-cp312-cp312-linux_x86_64.whl` from Releases, then:
+Download the wheel from Releases, then:
 
 ```bash
 # use ComfyUI's venv, not system python
 /path/to/ComfyUI/venv/bin/python -m pip install --force-reinstall \
-  ./nunchaku-1.3.0.dev20260909+cu13.0torch2.14-cp312-cp312-linux_x86_64.whl
+  ./nunchaku-1.3.0.dev20260909.cu13.0torch2.14-cp312-cp312-linux_x86_64.whl
 ```
 
 Or:
